@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f4f4f4;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .history {
+            text-align: center;
+            margin-bottom: 30px;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: purple;
+            margin: 30px 0 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .His1 {
+            flex: 1;
+            max-width: 700;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 700px;
+            padding-left: 50px;
+            margin-top: 0%;
+            float: right;
+
+        }
+
+
+        .navliks {
+            float: inline-end;
+            width: 220px;
+            /* Make it large enough to carry content */
+            height: 100Vh;
+            /* Full viewport height */
+            position: relative;
+            /* Fixed position on the right */
+            top: 10px;
+            right: 0;
+            border: 2px solid rgb(100, 100, 65);
+            border-radius: 10px;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            /* margin-left: 500px; */
+            /* overflow-y: auto; */
+            /* Enable scroll if content overflows */
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            /* Add subtle shadow */
+            z-index: 10;
+            /* Ensure it's above other content */
+        }
+
+        .father {
+
+            /* display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: 100px 200px; */
+            flex: 1;
+            float: left;
+            width: 370px;
+            height: 185vh;
+            position: relative;
+            top: 30px;
+            /* margin-right: 1000px; */
+            right: 0;
+            border: 5px solid rgb(24, 129, 94);
+            border-radius: 10px;
+            background-color: rgb(107, 180, 180);
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            color: white;
+
+        }
+
+        /* #INT {
+            display: inline-block;
+        } */
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #673AB7;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            background: #f1f1f1;
+            padding: 12px;
+            margin: 8px 0;
+            border-left: 5px solid #4CAF50;
+            transition: background 0.3s;
+        }
+
+        .card li:hover {
+            background: #e0f7fa;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>HTML Overview</h1>
+            <p>Learn the basics of HTML, its uses, and how to create structured web pages.</p>
+        </header>
+
+        <div class="container">
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>What is HTML?</h3>
+                    <!-- <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the backbone of all web pages,
+                        providing the basic structure through elements like headings, paragraphs, and lists.
+                        It’s the standard language used to create and design web pages. HTML structures the content on
+                        the web by using a system of tags and elements.</p> -->
+
+
+               <p>HTML is an acronym which stands for <b>Hyper Text Markup Language</b> which is used for creating web pages and web applications.
+             Let's see what is meant bt Hypertext Markup Language and Web page. <br>
+            <b>Hyper Text : </b> Hyper Text Simply means "Text within Text". A text has a link within it, is a hypertext . Whenever you click on a link which brings you to a new webpage,
+        you have clicked on a hyper. HyperText is a way to link two or more web pages (HTML document ) with each other. <br>
+          <b>Markup language:</b> A markup language is a computer language that is used to do apply layout and formatting convention to a text document. Markup language makes text more interactive and dynamic . 
+          It can turn text into images , table , link etc .
+
+        </p>
+
+
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Uses of HTML</h3>
+                    <ul>
+                        <li>Structuring Web Pages</li>
+                        <li>Embedding Images and Media</li>
+                        <li>Creating Forms and Tables</li>
+                        <li> External Resources</li>
+                        <li>Displaying Media</li>
+                        <li> Accessibility and SEO</li>
+                        <li>Creating Links and Navigation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>What does HTML do?</h3>
+                    <p></p>
+                    <li> <b> Defines the content: </b> It organizes text, images, links, videos, and more into a
+                        readable format.</p>
+                    </li>
+                    <p>
+                        <li> <b> Creates structure:</b> It uses tags like &lt;header&gt;, &lt;footer&gt;, and
+                            &lt;section&gt; to arrange content.</li>
+                    </p>
+                    <p>
+                        <li> <b> Links web pages:</b> HTML allows you to connect multiple pages using hyperlinks.</li>
+                    </p>
+                    <p>
+                        <li> <b> Supports multimedia: </b> It embeds images, videos, and audio files.</li>
+                    </p>
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="main-div">
+
+
+
+            <div class="navliks">
+                <ul>
+                    <li><a href="">Building Web Pages</a></li>
+                    <li><a href="">Linking Web Pages</a></li>
+                    <li><a href="">mbedding Media</a></li>
+                    <li><a href="">Creating Forms</a></li>
+                    <li><a href="">Structuring Content
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="father">
+                <h3><b> Father of HTML</b></h3>
+                <img src="download (2).jpg" alt="" > <br>
+                <i> <b> Tim Berners-lee </b></i>
+                <ul>
+                    <li>
+                        <h3>Biography of Tim Berners-Lee</h3>
+                    </li>
+
+                    <li>
+                        Full Name: Sir Timothy John Berners-Lee</li>
+                    <li> Born: June 8, 1955 (age 69)</li>
+                    <li> Birthplace: London, England</li>
+                    <li> Nationality: British</li>
+                    <li> Profession: Computer Scientist, Engineer, Professor</li>
+                </ul>
+
+
+                <h4>
+                        <li>
+                        Tim Berners-Lee is a British computer scientist best known for inventing the World Wide Web
+                        (WWW).
+                </li>
+                <li> <b>In 1989, while working at CERN (the European Organization for Nuclear Research), he proposed a
+                        system for sharing information using hypertext.</li>
+                <li>
+                    In 1991, he developed HTML (HyperText Markup Language), HTTP (HyperText Transfer Protocol), and the
+                    first web browser, making the WWW accessible.
+                </li>
+                <li>He was knighted by Queen Elizabeth II in 2004 for his contributions to technology.
+
+                </li>
+                <li>
+                    Today, he advocates for an open and free internet, promoting data privacy and decentralization
+                    through projects like Solid.
+                </li>
+                </h4>
+            </div>
+
+            <div class="His1">
+                <h2 class="history"> <u> History of HTML</u> </h2>
+                <h3>
+                    <li>1. The Early Days (1989 – 1993)
+                </h3>
+                <p> 1989: HTML was invented by Tim Berners-Lee, a physicist at CERN (European Organization for Nuclear
+                    Research), as a way to share and link documents over the internet.
+                    1990: The first version of HTML was written by Berners-Lee. It had only 18 tags.
+                    1991: The first web page was published, providing information about the World Wide Web project.
+                    1993: Marc Andreessen and Eric Bina created Mosaic, the first graphical web browser, making the web
+                    more
+                    accessible.</li>
+                </p>
+
+                <h3>
+                    <li> 2. HTML 2.0 (1995)
+                </h3>
+                The first official HTML standard.
+                Introduced new elements:
+                <form> for user input.
+                    <img> for images.
+                    <table> for tabular data.
+                        This version set the foundation for basic web design. </li>
+
+                        <h3>
+                            <li>3. HTML 3.2 (1997)
+                        </h3>
+                        </li>
+                        <li> Published by the W3C (World Wide Web Consortium).</li>
+                        <li>Added</li>
+                        <li> &lt;div&gt; for better content structuring.
+                        <li> &lt;font&gt; for text styling (later deprecated).</li>
+                        <li> &lt;script&gt; for client-side scripting.</li>
+                        <li>This version aligned with the rise of CSS for styling.</li>
+                        <h3>
+                            <li>4. HTML 4.01 (1999)</li>
+                        </h3>
+                        <li>A major release with improved semantic elements.</li>
+                        <li>Added:</li>
+                        <li> &lt;abbr&gt;, &lt;acronym&gt;, &lt;strong&gt;, and &lt;em&gt; for better accessibility and
+                            meaning.</li>
+                        <li>
+                            <h3>5. XHTML 1.0 (2000)</h3>
+                        </li>
+                        <li>XHTML was a stricter, XML-based version of HTML.
+                            Enforced rules like:
+                            All tags had to be closed.
+                            Attributes had to be in lowercase.
+                            Proper nesting of elements was mandatory.
+                            Aimed at making web pages more consistent and portable.
+                        </li>
+                        <li>
+                            <h3>HTML5 (2014)</h3>
+                        </li>
+                        <li> A major overhaul introduced by the WHATWG (Web Hypertext Application Technology Working
+                            Group).
+                            Included:
+                            Native support for audio and video: &lt;audio&gt; and &lt;video&gt;.
+                            Canvas and &lt;svg&gt; for graphics and animations.
+                            New semantic tags: &lt;article&gt;, &lt;section&gt;, &lt;header&gt;, &lt;footer&gt;,
+                            &lt;nav&gt;.
+                            Better support for web applications and APIs.
+                            Improved compatibility with mobile devices.</li>
+
+                        <li>
+                            <h3> 7. HTML5.1 and Beyond (2016 – Present)</h3>
+                        </li>
+                        <li> HTML5.1 (2016) and HTML5.2 (2017) introduced small updates:
+                            &lt;dialog&gt; for creating modal dialogs.
+                            &lt;picture&gt; and &lt;srcset&gt; for responsive images.
+                            Ongoing improvements continue under WHATWG.
+                            Modern HTML is now living standard, with continuous updates.</li>
+            </div>
+            <style>
+                .navliks {
+                    float: right;
+                }
+                </style>
+        <footer>
+            <p>&copy; 2025 HTML Basics | All rights reserved.</p>
+        </footer>
+        
+    </div>
+
+
+    </body>
+
+</html>

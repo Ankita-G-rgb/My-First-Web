@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Overview</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f4f4f4;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .history {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: purple;
+            margin: 30px 0 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            color: #673AB7;
+            margin-bottom: 10px;
+        }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .card li {
+            background: #f1f1f1;
+            padding: 12px;
+            margin: 8px 0;
+            border-left: 5px solid #4CAF50;
+            transition: background 0.3s;
+        }
+
+        .card li:hover {
+            background: #e0f7fa;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        .His1 {
+            max-width: 900px;
+            width: 100%;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 0 auto 30px;
+        }
+
+        .div1 {
+            position: fixed;
+            width: 400px;
+            height: 100vh;
+            top: 100px;
+            right: 0;
+            border: 2px solid rgb(100, 100, 65);
+            border-radius: 10px;
+            background-color: lightgoldenrodyellow;
+            padding: 20px;
+            overflow-y: auto;
+            box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+            z-index: 10;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .div1 {
+                position: static;
+                width: 100%;
+                height: auto;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>HTML Overview</h1>
+        <p>Learn the basics of HTML, its uses, and how to create structured web pages.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="card">
+            <div class="card-content">
+                <h3>What is HTML?</h3>
+                <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the backbone of all web pages,
+                    providing the basic structure through elements like headings, paragraphs, and lists.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>Uses of HTML</h3>
+                <ul>
+                    <li>Structuring Web Pages</li>
+                    <li>Embedding Images and Media</li>
+                    <li>Creating Forms and Tables</li>
+                    <li>External Resources</li>
+                    <li>Displaying Media</li>
+                    <li>Accessibility and SEO</li>
+                    <li>Creating Links and Navigation</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-content">
+                <h3>What does HTML do?</h3>
+                <ul>
+                    <li><strong>Defines the content:</strong> It organizes text, images, links, videos, and more into a readable format.</li>
+                    <li><strong>Creates structure:</strong> Uses tags like &lt;header&gt;, &lt;footer&gt;, and &lt;section&gt; to arrange content.</li>
+                    <li><strong>Links web pages:</strong> HTML allows you to connect multiple pages using hyperlinks.</li>
+                    <li><strong>Supports multimedia:</strong> Embeds images, videos, and audio files.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="His1">
+        <h2 class="history"> <u>History of HTML</u> </h2>
+        <ul>
+            <li><strong>1989 – 1993:</strong> Tim Berners-Lee invents HTML at CERN.</li>
+            <li><strong>1995:</strong> HTML 2.0 introduced forms, images, and tables.</li>
+            <li><strong>1997:</strong> HTML 3.2 added `<div>` and `<script>` tags.</li>
+            <li><strong>1999:</strong> HTML 4.01 introduced semantic elements.</li>
+        </ul>
+    </div>
+
+    <div class="div1">
+        <p>Sidebar content goes here...</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HTML Basics | All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
